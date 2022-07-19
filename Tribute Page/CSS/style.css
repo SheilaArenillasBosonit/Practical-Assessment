@@ -1,0 +1,77 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-width:  250px;
+    color: rgb(18, 18, 18);
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    margin-right: 50px;
+    margin-left: 50px;
+
+    border-radius: 10px;
+    background-color: white;
+}
+
+#title {
+    font-size: 5em;
+    color: #066421e0;
+   
+}
+
+
+#img-section{
+    margin: 0 30px 15px 30px;
+    border-radius: 10px;
+    background-color: rgba(225, 250, 208, 0.537);
+
+    display: flex;
+    flex-direction: column;
+}
+h3{
+    font-size: 1.8em;
+    padding-bottom: 10px;
+    color: #057f28a2;
+}
+
+#image {
+    max-width: 100%;
+    justify-content: center;
+    align-self: center;
+    margin: 20px;
+}
+
+figcaption {
+    margin: 0 50px 20px 50px;
+}
+
+#tribute-info_biography {
+    margin: 15px 30px 15px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+ul li {
+    list-style-type: none;
+    padding: 10px;
+}
+strong{
+    color: #07812a81; 
+}
+
+#tribute-info_works {
+    margin: 0 30px 0 30px;
+    border: 5px dotted #098a2da2;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
