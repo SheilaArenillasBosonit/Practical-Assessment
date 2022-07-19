@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title> Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <section id="presentation">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Gracias por tomarse el tiempo para ayudarnos a mejorar la plataforma</p>
+        </section>
+        <form id="survey-form" action="">
+            <!-- Nombre -->
+            <div id="form-group">
+                <label id="name-label" for="name">Nombre</label>
+                <input id="name" type="text" placeholder="Nombre.." required>
+            </div>
+            <!-- email -->
+            <div id="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input id="email" type="email" placeholder="Email" required>
+            </div>
+            <!-- Edad -->
+            <div id="form-group">
+                <label id="number-label" for="age">Edad (opcional)</label>
+                <input id="number" type="number" max="70" min="18" placeholder="Edad">
+            </div>
+            <!-- rol -->
+            <div id="form-group">
+                <label id="role-label" for="">¿Qué opción describe mejor su función actual?</label>
+                <select name="dropdown" id="dropdown">
+                    <option value="Default" selected>Seleccionar rol actual</option>
+                    <option value="Student">Estudiante</option>
+                    <option value="Full time job">Trabajo a tiempo completo</option>
+                    <option value="Full time learner">Aprendiz a tiempo completo</option>
+                    <option value="Prefer not to say">Prefiere no decir</option>
+                    <option value="Other">Otros</option>
+                </select>
+            </div>
+            <!-- radio -->
+            <div id="form-group">
+                <label id="radio-label" for="">¿Recomendarías freeCodeCamp a un amigo?</label>
+                <fieldset id="group1">
+                    <label>
+                        <input id="radio1" type="radio" value="definitely" name="group1">Definitivamente
+                    </label>
+                    <label>
+                        <input id="radio2" type="radio" value="maybe" name="group1">Quizás
+                    </label>
+                </fieldset>
+
+                <fieldset id="group2">
+                    <label>
+                        <input id="radio3" type="radio" value="not sure" name="group2">No estoy segura
+                    </label>
+                    <label>
+                        <input id="radio4" type="radio" value="not sure" name="group2">Definitivamente no
+                    </label>
+                </fieldset>
+            </div>
+            <!--Característica -->
+            <div id="form-group">
+                <label id="feature-label" for="">¿Cuál es tu característica favoria de freeCodeCamp?</label>
+                <label for=""><input id="feature-1" type="checkbox" value="Front-end">   Front-end Project </label>
+                <label for=""><input id="feature-2" type="checkbox" value="Back-end"> Back-end Project</label>
+                <label for=""><input id="feature-3" type="checkbox" value="Data"> Data Visualization</label>
+                <label for=""><input id="feature-4" type="checkbox" value="Challenges"> Challenges</label>
+                <label for=""><input id="feature-5" type="checkbox" value="Open Source"> Open Source Community</label>
+                <label for=""><input id="feature-6" type="checkbox" value="Gitter"> Gitter help rooms</label>
+                <label for=""><input id="feature-7" type="checkbox" value="Videos"> Videos</label>
+                <label for=""><input id="feature-8" type="checkbox" value="City"> City Meetups</label>
+                <label for=""><input id="feature-9" type="checkbox" value="Wiki"> Wiki</label>
+                <label for=""><input id="feature-10" type="checkbox" value="Forum"> Forum</label>
+                <label for=""><input id="feature-11" type="checkbox" value="Courses"> Additional Courses</label>
+            </div>
+            <!-- Area de text -->
+            <div id="form-group">
+                <label id="text-label" for=""></label>
+                <textarea name="textarea" id="10" cols="3" rows="10">Ingrese el comentario aqui..</textarea>
+            </div>
+            <!-- boton -->
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
