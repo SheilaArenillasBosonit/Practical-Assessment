@@ -1,77 +1,167 @@
-html, body {
-    font-family: Arial, Helvetica, sans-serif;
-    min-width:  250px;
-    color: rgb(18, 18, 18);
+:root {
+    
+    --global-color-font:black;
+    --global-background-color: #023e8a;
+    --banner-background-color:#142d46;
 }
 
-#main {
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(252, 231, 251, 0.449);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+#nav-bar {
+    background-color: rgba(252, 185, 239, 0.663);
+    opacity: 0.7;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-
-    margin-right: 50px;
-    margin-left: 50px;
-
-    border-radius: 10px;
-    background-color: white;
 }
-
-#title {
-    font-size: 5em;
-    color: #066421e0;
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
    
 }
 
+#header-img {
+    width: 50px;
+    height: 50px;
+}
 
-#img-section{
-    margin: 0 30px 15px 30px;
-    border-radius: 10px;
-    background-color: rgba(225, 250, 208, 0.537);
+#logo-text{
+    width: 200px;
+    margin: 0;
+    padding-left: 10px;
+    margin-top: 5px;
+    
+}
 
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    list-style-type: none;
+    margin-top: 7px;
+}
+
+.nav-link {
+
+    margin: 0 10px 0 10px;
+    
+}
+
+main {
     display: flex;
     flex-direction: column;
-}
-h3{
-    font-size: 1.8em;
-    padding-bottom: 10px;
-    color: #057f28a2;
-}
-
-#image {
-    max-width: 100%;
+    flex-wrap: wrap;
+    
     justify-content: center;
+}
+
+#title {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color:#9703a2b6
+}
+
+#about_me, #media, #works, #contact{
     align-self: center;
-    margin: 20px;
+    width: 80%;
+    padding: 20px 20px 20px 20px;
+    margin-top: 20px;
 }
 
-figcaption {
-    margin: 0 50px 20px 50px;
-}
 
-#tribute-info_biography {
-    margin: 15px 30px 15px 30px;
+
+#about_me_info {
     display: flex;
     flex-direction: column;
-    align-items: center;
-
 }
 
+#about_me_title, #works_title, #contact_title {
+    margin: 20px 0 20px 0;
+    text-align: center;
+}
+#video_container{
+    display: flex;
+    justify-content: center;
+}
+
+.prices_works {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    
+}
+
+
+
+ .card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 3px solid #92869348;
+    margin-top: 10px;
+    
+    
+}
+.photo{
+    width: 20%;
+    height: 20%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 ul li {
-    list-style-type: none;
-    padding: 10px;
-}
-strong{
-    color: #07812a81; 
+   margin-bottom: 10px;
 }
 
-#tribute-info_works {
-    margin: 0 30px 0 30px;
-    border: 5px dotted #098a2da2;
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.button {
+    width: 100px;
+    margin-bottom: 10px;
+    background-color: rgba(252, 185, 239, 0.663); 
+    border: 2px solid rgba(252, 231, 251, 0.449)
 }
 
+#contact {
+    width: 100%;
+    padding: 30px 30% 0 30%;
+}
+
+@media (min-width: 400px){
+    #contact {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #contact form {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    input {
+        width: 100%;
+    }
+}
